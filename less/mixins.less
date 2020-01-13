@@ -33,9 +33,19 @@
 	width: 100%;
   }
   
+  a {
+	text-decoration: none;
+	color: @textcolor;
+  }
+  
   &:hover {
 	color: @bgcolor;
 	background-color: @textcolor;
 	.rubberBand(2s, 0s);
+	
+	a {
+		text-decoration: none;
+		color: @bgcolor
+	}
   }
 }
