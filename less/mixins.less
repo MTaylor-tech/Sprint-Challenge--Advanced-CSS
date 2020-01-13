@@ -11,3 +11,22 @@
 		flex-direction: column;
 		justify-content: space-around;
 	}
+	
+.button(@textcolor, @bgcolor, @wide) {
+  color: @textcolor;
+  background-color: @bgcolor;
+  width: @wide;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1.2vh;
+  border-radius: 5px;
+  border: 1px solid @bgcolor;
+  
+  
+  &:hover {
+	color: @bgcolor;
+	background-color: @textcolor;
+  }
+}
