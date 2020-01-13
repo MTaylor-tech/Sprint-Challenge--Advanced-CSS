@@ -12,6 +12,12 @@
 		justify-content: space-around;
 	}
 	
+	.flexcr {
+		display: flex;
+		flex-direction: column-reversed;
+		justify-content: space-around;
+	}
+	
 .button(@textcolor, @bgcolor, @wide) {
   color: @textcolor;
   background-color: @bgcolor;
@@ -23,7 +29,9 @@
   padding: 1.2vh;
   border-radius: 5px;
   border: 1px solid @bgcolor;
-  
+  @media @phone {
+	width: 100%;
+  }
   
   &:hover {
 	color: @bgcolor;
