@@ -592,3 +592,28 @@ input,
 select {
   margin: 1vh 2vw 1vh 1vw;
 }
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.blog .blogpost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.blog .blogpost .blogtext {
+  width: 80%;
+}
+.blog .blogpost .blogimage {
+  width: 20%;
+  padding: 2vh 2vw;
+  border-radius: 15px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
